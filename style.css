@@ -14,15 +14,15 @@ a,
 header a {
     color: var(--pt)
 }
-
+header a {
+    font-weight: bold;
+}
 #Times,
-#bg2,
 #content,
 #gtc,
 #main4,
 #myBtnContainer,
 #sbar,
-#vis1,
 .bg3,
 .bg5,
 .bg8,
@@ -124,8 +124,11 @@ header {
 header {
     display: flex;
     margin-bottom: 0
-}
-
+}#sdads{
+    color: rgb(97, 97, 97);
+}.dark #sdads{color:rgba(255, 255, 255, 0.856);}
+#llgg div{color: rgb(97, 97, 97);}
+.dark #llgg div{color: white;}
 #bkg,
 #nome {
     left: 15px;
@@ -269,12 +272,12 @@ a {
 }
 
 :root {
-    --pt: #f5f5f5;
-    --css: #252525;
-    --background: #191919;
-    --line: rgba(255, 255, 255, 0.315);
-    --dest: #709eff;
-    --box: #818181 0 0 2px
+    --css: #fcfcfc;
+    --background: #fff;
+    --line: rgba(0, 0, 0, 0.212);
+    --dest: #1945be;
+    --pt: #1a416e;
+    --box: rgba(0, 0, 0, 0.568) 0 0 2px
 }
 
 #Times,
@@ -410,14 +413,14 @@ h1 {
 header {box-shadow: var(--pt) 0px 0px 0px 2px;
     font-size: min(18px, 5vw);
     background-color: var(--css);
-    justify-content: center
+    padding-right: 3%;
+    justify-content: flex-end
 }
 
 #header-content {
-    justify-content: space-between;
+    justify-content:flex-end;
+    gap: 40px;
     align-items: center;
-    margin-top: 10px;
-    width: 1000px;
     z-index: 2
 }
 
@@ -474,13 +477,12 @@ footer h3 {
 
 footer #lfgg {
     font-size: 1.2em;
-    letter-spacing: 3px;
     font-weight: bold;
 }
 
 #llgg {
     font-size: 24px;font-weight: 800;
-    letter-spacing: 1px;
+    letter-spacing: .3;
     margin-top: -2.5px
 }
 
@@ -613,24 +615,21 @@ header a:hover {
     font-size: min(28.875px, 6.5vw);
 }
 
-.titulos2 {
-    font-size: min(40px, 6.5vw);
+.titulos2 {text-align: center;
+    font-size: min(40px, 7vw);
     background-color: var(--pt);
     padding: 20px 60px;
     color: white;
+}.dark .titulos2{
+    color: var(--pt);
+    background-color: #272a3b;
 }
 
-.bg8 .titulos3:first-of-type {
-    margin: 0 0 10px
+.titulos4{
+    font-size: 1.16em;
 }
-
-.bg8 .titulos3 {
-    margin-bottom: 12px;
-    font-size: min(24px, 6vw);
-}
-
-.titulos3 {
-    font-size: min(4.5vw, 35px)
+.titulos3 {margin-top: 12px;
+    font-size: min(6vw, 35px)
 }
 
 #bbg {
@@ -782,10 +781,7 @@ table img:hover {
     justify-content: space-around
 }
 
-.agbox hr,
-.dark #bg2,
-.dark #vis1,
-.dark footer {
+.agbox hr{
     background: #fff
 }
 
@@ -810,16 +806,10 @@ table img:hover {
     margin-left: 10px
 }
 
-#bg2 {
-    margin-top: -1px;
+#bg2 {box-shadow: var(--pt) 0px 2px 0px 0.1px;
     font-size: min(16px, 5vw)
 }
 
-#bg2 hr {
-    background: rgba(255, 255, 255, .189);
-    border: 0;
-    height: 1px
-}
 
 #bg4,
 .AA,
@@ -828,9 +818,6 @@ table img:hover {
     border-radius: 5px
 }
 
-.dark #bg2 hr {
-    background: rgba(0, 0, 0, .3)
-}
 
 #bg4 {
     padding: 10px;
@@ -896,7 +883,7 @@ table img:hover {
     border-radius: 10px 10px 25px 25px
 }
 
-#vis1 {
+#vis1 {box-shadow: var(--pt) 0px 0px 0px 1px;
     z-index: 1;
     padding: 3px
 }
@@ -1145,7 +1132,7 @@ footer h2 {
 }
 
 .ftdiv {
-    max-width: 1020px;
+    max-width: 940px;
     margin: auto
 }
 
@@ -1309,16 +1296,8 @@ footer p {
 }
 
 @media only screen and (max-width:1017px) {
-
-    .titulos,
-    .titulos2,
-    .titulos3,
-    section h3 {
-        padding-left: 10px;
-    }
-
-    body {
-        letter-spacing: 0px;
+    .titulos2{
+    padding: 10px 15px;
     }
 
     #imgg {
@@ -1518,7 +1497,7 @@ footer p {
 }
 
 .lua p::after {
-    content: "Claro"
+    content: "Escuro"
 }
 
 .lua p::before {
@@ -1526,7 +1505,7 @@ footer p {
 }
 
 .dark .lua p::after {
-    content: "Escuro"
+    content: "Claro"
 }
 
 @media only screen and (min-width:704px) {
@@ -1577,9 +1556,6 @@ footer p {
     }
 }
 
-.dark {
-    background: #fafafa
-}
 
 @media screen and (max-width:481px) {
     #p1 a {
@@ -1635,14 +1611,16 @@ footer nav {
 .dark .bg8 a {
     color: #fff
 }
-
-:root .dark {
-    --css: #fcfcfc;
-    --background: #fff;
-    --line: rgba(0, 0, 0, 0.212);
-    --dest: #1945be;
-    --pt: #1a416e;
-    --box: rgba(0, 0, 0, 0.568) 0 0 2px
+.dark header{
+    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 1px;
+}
+:root .dark {--pt: #edf6ff;
+    --css: #1e202b;
+    --background: #1e202b;
+    --line: rgba(255, 255, 255, 0.315);
+    --dest: #709eff;
+    --box: #818181 0 0 2px
+    
 }
 
 .cookieConsentContainer {
