@@ -229,10 +229,11 @@ header #llgg:hover {
 .tlft {
     overflow: hidden
 }
-
-#bg2,
-header {
+#bg2{
     padding: 20px 0
+}
+header {
+    padding: 25px 0
 }
 
 #pers,
@@ -410,7 +411,7 @@ h1 {
     font-size: min(28.6px, 7vw);
 }
 
-header {box-shadow: var(--pt) 0px 0px 0px 2px;
+header {box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     font-size: min(18px, 5vw);
     background-color: var(--css);
     padding-right: 3%;
@@ -883,7 +884,7 @@ table img:hover {
     border-radius: 10px 10px 25px 25px
 }
 
-#vis1 {box-shadow: var(--pt) 0px 0px 0px 1px;
+#vis1 {box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     z-index: 1;
     padding: 3px
 }
@@ -1612,9 +1613,9 @@ footer nav {
     color: #fff
 }
 .dark header{
-    box-shadow: rgba(255, 255, 255, 0.15) 1.95px 1.95px 1px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
-:root .dark {--pt: #edf6ff;
+:root .dark {--pt: #ffffff;
     --css: #1e202b;
     --background: #1e202b;
     --line: rgba(255, 255, 255, 0.315);
